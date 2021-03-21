@@ -1,0 +1,1 @@
+{"ast":null,"code":"import cors from \"../cors\";\nimport { DProduct } from \"crudfirebase/dproduct\";\nexport default async function getProduct(req, res) {\n  const {\n    pbarcode\n  } = req.query;\n  await cors(req, res);\n  const product = await DProduct.getInstance().getproduct(pbarcode);\n  res.send(product);\n}","map":null,"metadata":{},"sourceType":"module"}

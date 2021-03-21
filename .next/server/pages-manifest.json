@@ -1,6 +1,11 @@
 {
+  "/api/cors": "pages/api/cors.js",
+  "/api/product/getproduct": "pages/api/product/getproduct.js",
+  "/api/product/listexpression": "pages/api/product/listexpression.js",
+  "/api/product/product": "pages/api/product/product.js",
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
