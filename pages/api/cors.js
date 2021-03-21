@@ -1,6 +1,7 @@
 import Cors from 'cors'
 import initMiddleware from '../../lib/init-middleware'
-import {DProduct} from 'crudfirebase/dproduct';
+
+
 
 // Initialize the cors middleware
 const cors = initMiddleware(
@@ -10,11 +11,5 @@ const cors = initMiddleware(
     methods: ['GET', 'POST', 'PUT','DELETE','OPTIONS'],
   })
 )
+export default cors
 
-export default async function handler(req, res) {
-  // Run cors
-  await cors(req, res)
-  const list=await DProduct.getInstance().listproducts();
-  // Rest of the API logic
-  res.json(list)
-}

@@ -9,9 +9,8 @@
   "dependencies": {
     "cors": "2.8.5",
     "crudfirebase": "^0.0.8",
-    "next": "latest",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "e-commercee": "^0.0.31",
+    "next": "latest"
   },
   "license": "MIT"
 }
